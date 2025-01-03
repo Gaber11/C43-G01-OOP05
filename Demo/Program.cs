@@ -1,4 +1,5 @@
-﻿using Demo.overloading;
+﻿using Demo.Casting_OperatorOverloading;
+using Demo.overloading;
 using System.Numerics;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -29,16 +30,16 @@ namespace Demo
             #endregion
 
             #region 2-Casting Operators Overloading
-         //   object obj = 4;
-         //   int y = (int)obj; //Explicit Casting
-         ////  Console.WriteLine(y);
+            //   object obj = 4;
+            //   int y = (int)obj; //Explicit Casting
+            ////  Console.WriteLine(y);
 
-         //   Comple C1 = new Comple() { Real = 70, Imag = 2 };
-         //  //int X = (int)C1;
-         //  //Console.WriteLine(X); //Explicit Casting --> 70
+            //   Comple C1 = new Comple() { Real = 70, Imag = 2 };
+            //  //int X = (int)C1;
+            //  //Console.WriteLine(X); //Explicit Casting --> 70
 
-         //   string X = (string)C1;
-         //   Console.WriteLine(X); //Implicit Casting --> 70 + 2i
+            //   string X = (string)C1;
+            //   Console.WriteLine(X); //Implicit Casting --> 70 + 2i
             //Implicit Casting ==> can be used implicit and explicit
             //Explicit Casting ==> can be used only explicit
             //Recommended to use Explicit casting
@@ -48,6 +49,25 @@ namespace Demo
             //2] Compiler will Remind me.
 
 
+            #endregion
+
+            #region 3 - Casting Operators Overloading - Mapping
+           // User user = new User()
+           // {
+           //     Id = 1,
+           //     FullName = "Gaber Ezzat",
+           //     Email = "gaber@gmail.com",
+           //     Password = "123co87",
+           //     SecurityStamp = Guid.NewGuid(),
+           // };
+            //   Console.WriteLine(user.SecurityStamp);
+            //Database ==>Model[user] ==> UserViewModel ==> View
+            //View ==> UserViewModel ==> Model[user] ==> Database  
+           //UserViewModel userViewModel = (UserViewModel)user;
+           //Console.WriteLine(userViewModel.FirstName);
+           //Console.WriteLine(userViewModel.LastName);
+           //Console.WriteLine(userViewModel.Email);
+            //UserViewModel by default convert from parent Data Type[object] to DataType
             #endregion
         }
     }
