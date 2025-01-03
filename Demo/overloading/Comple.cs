@@ -51,5 +51,14 @@ namespace Demo.overloading
                 return Left.Real < Right.Real;
         }
         
+        public static explicit operator int(Comple C1)
+        {
+            return C1?.Real??0;
+        }
+        public static implicit operator string(Comple C1)
+        {
+            return C1?.ToString()?? String.Empty;
+        }
+
     }
 }
