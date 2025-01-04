@@ -34,6 +34,12 @@ namespace Assignment
 
             #region Second Project 1.Define Class Duration To include Three Attributes Hours, Minutes and Seconds.
 
+
+
+            #endregion
+
+            #region Second Project 2.Override All System.Object Members (ToString, Equals, GetHasCode).
+
             #endregion
 
         }
