@@ -32,7 +32,9 @@ namespace Assignment
 
             #endregion
 
+            #region Second Project 1.Define Class Duration To include Three Attributes Hours, Minutes and Seconds.
 
+            #endregion
 
         }
     }
