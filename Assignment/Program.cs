@@ -68,11 +68,12 @@ namespace Assignment
             //Console.WriteLine(D3);
 
             //  D3 = D1 + 7800;
-           //D3 = D1 + 7800;
-           //Console.WriteLine(D3);
+            //D3 = D1 + 7800;
+            //Console.WriteLine(D3);
 
-
-
+            //  D3 = 666 + D3
+            D3 = 666 + D3;
+           Console.WriteLine(D3);
 
 
 

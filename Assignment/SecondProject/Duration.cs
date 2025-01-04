@@ -76,5 +76,15 @@ namespace Assignment.SecondProject
                 Seconds = d1.Seconds + (durTime % 3600) % 60
             };
         }
+
+        public static Duration operator +(int durTime, Duration d3)
+        {
+            return new Duration()
+            {
+                Hours = d3.Hours + durTime / 3600,
+                Minutes = d3.Minutes + (durTime % 3600) / 60,
+                Seconds = d3.Seconds + (durTime % 3600) % 60
+            };
+        }
     }
 }
