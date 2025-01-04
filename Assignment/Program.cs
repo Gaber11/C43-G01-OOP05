@@ -64,9 +64,12 @@ namespace Assignment
             Duration D2 = new Duration(5800);
             Duration D3 = new Duration(666);
             //  D3 = D1 + D2;
-            D3 = D1 + D2;
-            Console.WriteLine(D3);
+            //D3 = D1 + D2;
+            //Console.WriteLine(D3);
 
+            //  D3 = D1 + 7800;
+           //D3 = D1 + 7800;
+           //Console.WriteLine(D3);
 
 
 

@@ -11,7 +11,7 @@ namespace Assignment.SecondProject
         public int Hours { get; set; }
         public int Minutes { get; set; }
         public int Seconds { get; set; }
-      
+
 
         public override bool Equals(object? obj)
         {
@@ -23,21 +23,21 @@ namespace Assignment.SecondProject
             return base.GetHashCode();
         }
 
-        public Duration(int hour , int minute , int second)
+        public Duration(int hour, int minute, int second)
         {
             Hours = hour;
             Minutes = minute;
             Seconds = second;
-            
+
         }
         public Duration(int durTime)
         {
-      
+
             Hours = durTime / 3600;
             Minutes = (durTime % 3600) / 60;
             Seconds = (durTime % 3600) % 60;
-            
-           
+
+
         }
 
         public override string ToString()
@@ -52,21 +52,29 @@ namespace Assignment.SecondProject
 
         public Duration()
         {
-            
+
         }
-        public  static Duration operator + (Duration d1, Duration d2)
+        public static Duration operator +(Duration d1, Duration d2)
         {
-            return new Duration ()
+            return new Duration()
             {
                 Hours = d1.Hours + d2.Hours,
                 Minutes = d1.Minutes + d2.Minutes,
                 Seconds = d1.Seconds + d2.Seconds
             };
-          
 
-            
+
+
         }
-      
-    
+
+        public static Duration operator +(Duration d1, int durTime)
+        {
+            return new Duration()
+            {
+                Hours = d1.Hours + durTime / 3600,
+                Minutes = d1.Minutes + (durTime % 3600) / 60,
+                Seconds = d1.Seconds + (durTime % 3600) % 60
+            };
+        }
     }
 }
