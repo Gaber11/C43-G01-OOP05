@@ -88,8 +88,39 @@ namespace Assignment
             //Console.WriteLine(D3);
 
             //D1= D1 -D2
-            D1 = D1 - D2;
-            Console.WriteLine(D1);
+            //D1 = D1 - D2;
+            //Console.WriteLine(D1);
+
+            //If (D1>D2)
+            //if (D1 > D2)
+            //{
+            //    Console.WriteLine("D1 is Greater than D2");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("D1 is Less than D2");
+            //}
+
+            ////If (D1<D2)
+            //if (D1 < D2)
+            //{
+            //    Console.WriteLine("D1 is  Less than D2");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("D1 is Greater than D2");
+            //}
+
+            //// if (D1 <= D2)
+            //if (D1 <= D2)
+            //{
+            //    Console.WriteLine("D1 is Less than or Equal D2");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("D1 is Greater than D2");
+            //}
+
 
 
 

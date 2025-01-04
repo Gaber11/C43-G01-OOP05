@@ -116,5 +116,45 @@ namespace Assignment.SecondProject
                 Seconds = d1.Seconds - d2.Seconds
             };
         }
+
+        public static bool operator >(Duration d1, Duration d2)
+        {
+            if (d1.Hours == d2.Hours)
+                return d1.Minutes > d2.Minutes;
+            else if (d1.Minutes == d2.Minutes)
+                return d1.Seconds > d2.Seconds;
+            else 
+                return d1.Hours > d2.Hours;
+        }
+        public static bool operator <(Duration d1, Duration d2) 
+        {
+            if (d1.Hours == d2.Hours)
+                return d1.Minutes < d2.Minutes;
+            else if (d1.Minutes == d2.Minutes)
+                return d1.Seconds < d2.Seconds;
+            else
+                return d1.Hours < d2.Hours;
+        }
+
+
+
+        public static bool operator <=(Duration d1, Duration d2)
+        {
+            if (d1.Hours == d2.Hours && d1.Minutes == d2.Minutes && d1.Seconds == d2.Seconds)
+                return true;
+            else
+                return d1 < d2;
+   
+               
+        }
+
+        public static bool operator >=(Duration d1, Duration d2)
+        {
+            if (d1.Hours == d2.Hours && d1.Minutes == d2.Minutes && d1.Seconds == d2.Seconds)
+                return true;
+            else
+                return d1 > d2;
+        }
+        
     }
-}
+    }
