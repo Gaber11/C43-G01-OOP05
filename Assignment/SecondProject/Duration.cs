@@ -96,5 +96,15 @@ namespace Assignment.SecondProject
                 Seconds = d1.Seconds
             };
         }
+
+        public static Duration operator --(Duration d1)
+        {
+            return new Duration()
+            {
+                Hours = d1.Hours,
+                Minutes = d1.Minutes - 1,
+                Seconds = d1.Seconds
+            };
+        }
     }
 }
