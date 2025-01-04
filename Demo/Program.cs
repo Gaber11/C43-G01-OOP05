@@ -1,5 +1,6 @@
 ﻿using Demo.Casting_OperatorOverloading;
 using Demo.overloading;
+using Demo.Partial;
 using Demo.Static;
 using System.Drawing;
 using System.Numerics;
@@ -109,6 +110,17 @@ namespace Demo
 
             #region 6 - Sealed
 
+            #endregion
+
+            #region 7 - Partial
+            //Employee employee = new Employee() { 
+            //Name = "Gaber",
+            //Email = "gaber@gmail.com",
+            //Age = 25,
+            //Id = 1        
+            
+            //};
+            //employee.Print();
             #endregion
         }
     }
