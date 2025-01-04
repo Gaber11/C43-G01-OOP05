@@ -155,6 +155,13 @@ namespace Assignment.SecondProject
             else
                 return d1 > d2;
         }
-        
+
+        public static explicit operator DateTime (Duration d1)
+        {
+            return new DateTime(1, 1, 1, d1.Hours, d1.Minutes, d1.Seconds);
+
+        }
+
+
     }
     }

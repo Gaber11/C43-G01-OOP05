@@ -121,8 +121,9 @@ namespace Assignment
             //    Console.WriteLine("D1 is Greater than D2");
             //}
 
-
-
+            //if(D1)
+           
+            // DateTime Obj = (DateTime)D1;
 
             #endregion
         }
