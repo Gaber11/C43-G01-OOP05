@@ -1,5 +1,6 @@
 ﻿using Demo.Casting_OperatorOverloading;
 using Demo.overloading;
+using System.Drawing;
 using System.Numerics;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -52,22 +53,43 @@ namespace Demo
             #endregion
 
             #region 3 - Casting Operators Overloading - Mapping
-           // User user = new User()
-           // {
-           //     Id = 1,
-           //     FullName = "Gaber Ezzat",
-           //     Email = "gaber@gmail.com",
-           //     Password = "123co87",
-           //     SecurityStamp = Guid.NewGuid(),
-           // };
+            // User user = new User()
+            // {
+            //     Id = 1,
+            //     FullName = "Gaber Ezzat",
+            //     Email = "gaber@gmail.com",
+            //     Password = "123co87",
+            //     SecurityStamp = Guid.NewGuid(),
+            // };
             //   Console.WriteLine(user.SecurityStamp);
             //Database ==>Model[user] ==> UserViewModel ==> View
             //View ==> UserViewModel ==> Model[user] ==> Database  
-           //UserViewModel userViewModel = (UserViewModel)user;
-           //Console.WriteLine(userViewModel.FirstName);
-           //Console.WriteLine(userViewModel.LastName);
-           //Console.WriteLine(userViewModel.Email);
+            //UserViewModel userViewModel = (UserViewModel)user;
+            //Console.WriteLine(userViewModel.FirstName);
+            //Console.WriteLine(userViewModel.LastName);
+            //Console.WriteLine(userViewModel.Email);
             //UserViewModel by default convert from parent Data Type[object] to DataType
+            #endregion
+
+            #region 4 - Abstraction 
+
+            //Rectangle rectangle = new Rectangle(10,20);
+
+            //Console.WriteLine(rectangle.CalcArea());
+            //Console.WriteLine(rectangle.Premeter);
+
+            //Square square = new Square(5);
+            //square.Dim1 = 5;
+            //Console.WriteLine(square.CalcArea());
+            //Console.WriteLine(square.Premeter);
+          // Circle circle = new Circle(4);
+          // Console.WriteLine(circle.CalcArea());
+          // Console.WriteLine(circle.Premeter);
+
+          //  Shape shape;
+            //You can create reference from abstract class
+            //Reference can refer to any object from any class that inherit from abstract class
+           // shape = new Rectangle(10, 20);
             #endregion
         }
     }
