@@ -82,10 +82,14 @@ namespace Assignment
             //Console.WriteLine(D3);
 
             //D3 = --D2 (Decrease One Minute)
-            D3 = D2;
-            Console.WriteLine(D3); //Before Decrease
-            D3 = --D2;      //(Decrease One Minute)
-            Console.WriteLine(D3);
+            //D3 = D2;
+            //Console.WriteLine(D3); //Before Decrease
+            //D3 = --D2;      //(Decrease One Minute)
+            //Console.WriteLine(D3);
+
+            //D1= D1 -D2
+            D1 = D1 - D2;
+            Console.WriteLine(D1);
 
 
 
