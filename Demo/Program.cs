@@ -1,5 +1,6 @@
 ﻿using Demo.Casting_OperatorOverloading;
 using Demo.overloading;
+using Demo.Static;
 using System.Drawing;
 using System.Numerics;
 using static System.Net.Mime.MediaTypeNames;
@@ -82,14 +83,28 @@ namespace Demo
             //square.Dim1 = 5;
             //Console.WriteLine(square.CalcArea());
             //Console.WriteLine(square.Premeter);
-          // Circle circle = new Circle(4);
-          // Console.WriteLine(circle.CalcArea());
-          // Console.WriteLine(circle.Premeter);
+            // Circle circle = new Circle(4);
+            // Console.WriteLine(circle.CalcArea());
+            // Console.WriteLine(circle.Premeter);
 
-          //  Shape shape;
+            //  Shape shape;
             //You can create reference from abstract class
             //Reference can refer to any object from any class that inherit from abstract class
-           // shape = new Rectangle(10, 20);
+            // shape = new Rectangle(10, 20);
+            #endregion
+
+            #region 5 - Static
+          // Utility U1 = new Utility() { X = 10, Y = 20 };
+          // Utility U2 = new Utility() { X = 30, Y = 40 };
+          // //       Console.WriteLine(U1.ToString());
+          // Console.WriteLine(Utility.CmToInch(20));
+          // Console.WriteLine(Utility.CmToInch(20));
+          // double Res = U1.ClcCircleArea(4);
+          // Console.WriteLine(Res);
+          //
+          // Res = U2.ClcCircleArea(5);
+          // Console.WriteLine(Res);
+
             #endregion
         }
     }
