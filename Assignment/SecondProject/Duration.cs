@@ -49,6 +49,24 @@ namespace Assignment.SecondProject
             return $" Hours: {Hours} , Minutes: {Minutes} ,Seconds: {Seconds} ";
 
         }
+
+        public Duration()
+        {
+            
+        }
+        public  static Duration operator + (Duration d1, Duration d2)
+        {
+            return new Duration ()
+            {
+                Hours = d1.Hours + d2.Hours,
+                Minutes = d1.Minutes + d2.Minutes,
+                Seconds = d1.Seconds + d2.Seconds
+            };
+          
+
+            
+        }
+      
     
     }
 }

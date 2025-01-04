@@ -58,6 +58,22 @@ namespace Assignment
 
 
             #endregion
+
+            #region 3.Implement All required Operators overloading to enable this Code:
+            Duration D1 = new Duration(1, 10, 15);
+            Duration D2 = new Duration(5800);
+            Duration D3 = new Duration(666);
+            //  D3 = D1 + D2;
+            D3 = D1 + D2;
+            Console.WriteLine(D3);
+
+
+
+
+
+
+
+            #endregion
         }
     }
 }
