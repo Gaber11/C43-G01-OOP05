@@ -94,16 +94,20 @@ namespace Demo
             #endregion
 
             #region 5 - Static
-          // Utility U1 = new Utility() { X = 10, Y = 20 };
-          // Utility U2 = new Utility() { X = 30, Y = 40 };
-          // //       Console.WriteLine(U1.ToString());
-          // Console.WriteLine(Utility.CmToInch(20));
-          // Console.WriteLine(Utility.CmToInch(20));
-          // double Res = U1.ClcCircleArea(4);
-          // Console.WriteLine(Res);
-          //
-          // Res = U2.ClcCircleArea(5);
-          // Console.WriteLine(Res);
+            // Utility U1 = new Utility() { X = 10, Y = 20 };
+            // Utility U2 = new Utility() { X = 30, Y = 40 };
+            // //       Console.WriteLine(U1.ToString());
+            // Console.WriteLine(Utility.CmToInch(20));
+            // Console.WriteLine(Utility.CmToInch(20));
+            // double Res = U1.ClcCircleArea(4);
+            // Console.WriteLine(Res);
+            //
+            // Res = U2.ClcCircleArea(5);
+            // Console.WriteLine(Res);
+
+            #endregion
+
+            #region 6 - Sealed
 
             #endregion
         }
