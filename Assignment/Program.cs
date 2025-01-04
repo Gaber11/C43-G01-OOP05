@@ -72,10 +72,14 @@ namespace Assignment
             //Console.WriteLine(D3);
 
             //  D3 = 666 + D3
-            D3 = 666 + D3;
-           Console.WriteLine(D3);
+            // D3 = 666 + D3;
+            //Console.WriteLine(D3);
 
-
+            //D3 = ++D1(Increase One Minute)
+            D3 = D1;   
+            Console.WriteLine(D3); //Before Increase
+            D3 = ++D1;      //(Increase One Minute)
+            Console.WriteLine(D3);
 
             #endregion
         }
